@@ -55,7 +55,7 @@ section {
     transform: translateY(-50%);
     height: .1rem;
     width: 100%;
-    background: #111;
+    background: rgb(2, 108, 247);
     z-index: -1;
 }
 .heading span {
@@ -63,7 +63,7 @@ section {
     color: rgb(2, 108, 247);
     background: #fafafa;
     padding: .5rem 1.5rem;
-    border: 0.1rem solid #111;
+    border: 0.1rem solid rgb(2, 108, 247);
     border-radius: .5rem;
 }
 .btn {
@@ -280,7 +280,7 @@ section {
 .features .box-container .box .content p {
     line-height: 2;
     font-size: 1.5rem;
-    color: #111;
+    color: #ffffff;
     padding: 1rem 0;
 }
 .pricing {
@@ -734,7 +734,7 @@ section {
         top: 99%;
         left: 0;
         right: 0;
-        background: #000;
+        background: #000ed1;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
