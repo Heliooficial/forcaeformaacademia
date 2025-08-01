@@ -731,6 +731,26 @@ section {
 
 /*treino*/
 
+.treinos-header {
+  margin-top: 10px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.titulo-treino {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitulo-treino {
+  font-size: 16px;
+  color: #666;
+}
+
+
 .treinos-section {
   padding: 40px;
   text-align: center;
