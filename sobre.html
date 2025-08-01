@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sobre a Força & Forma</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Favicon -->
+    <link rel="icon" href="img/forcaeforma.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .modalidades {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 120px 20px 60px;
+    }
+
+    .card {
+      flex: 1 1 280px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card div {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card i {
+      font-size: 24px;
+      color: #000ed1;
+    }
+
+    .contato-mapa {
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+    }
+
+    .contato-mapa h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .contato-mapa p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .contato-mapa iframe {
+      margin-top: 30px;
+      border: 0;
+    }
+
+.unidade p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.unidade i.fas.fa-clock {
+  color: #000ed1;
+  margin-right: 8px;
+  font-size: 20px;
+
+}
+
+.horarios-box {
+  background-color: #f1f1f1;
+  border-left: 4px solid #000ed1;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.unidade img {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contato-link {
+  color: #000ed1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contato-link:hover {
+  color: #ff6600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho fixo no topo -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="img/forcaeforma.png" alt="Logo Força & Forma" style="height: 60px;">
+        <b><span style="font-size: 20px; font-weight: bold; color: #fff;">Força & Forma Academia</span></b>
+      </div>
+    </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <b><a href="index.html">Início</a></b>
+      <b><a href="#about">Sobre</a></b>
+      <b><a href="#features">Nossos Serviços</a></b>
+      <b><a href="#pricing">Preços</a></b>
+      <b><a href="#trainers">Treinadores</a></b>
+      <b><a href="#">Informações</a></b>
+    </nav>
+  </header>
+
+  <!-- Cards de modalidades
+  <div class="modalidades">
+    <div class="card">
+      <img src="img/funcionais.jpg" alt="Treino Funcional">
+      <div>
+        <i class="fas fa-dumbbell"></i>
+        <h3>Treino Funcional</h3>
+        <p>Circuito dinâmico para força, resistência e agilidade.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/Pedale.jpg" alt="Spinning Power">
+      <div>
+        <i class="fas fa-bicycle"></i>
+        <h3>Spinning Power</h3>
+        <p>Pedale com ritmo e intensidade para treinos cardiovasculares e queima calórica.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/forca.jpg" alt="Musculação Pro">
+      <div>
+        <i class="fas fa-running"></i>
+        <h3>Musculação Pro</h3>
+        <p>Equipamentos modernos para treinos orientados e objetivos definidos.</p>
+      </div>
+    </div>
+  </div>
+  -->
+
+  <!-- Contato e Mapa -->
+
+ <section class="contato-mapa">
+<h1 class="heading" style="margin-top: 50px;"> <span>Onde Estamos</span></h1>
+
+  <div class="unidades">
+    
+    
+    <!-- Unidade 1 -->
+    <div class="unidade">
+      <h3>Unidade Boa Vista</h3>
+      <p><strong>Telefone:</strong> <a href="https://wa.me/5581997884108" target="_blank" class="contato-link">(81) 9788-4108</a></p>
+      <p><strong>Email:</strong> <a href="mailto:forcaeformaacademia@email.com" class="contato-link">forcaeformaacademia@email.com</a></p>
+      <p><strong>Endereço:</strong>Rua Santa Maria da Boa Vista, 325 - Jardim Boa Vista, Caruaru - PE, 55038-180</p>
+      <img src="img/forcaeforma1.jpg" alt="Foto da Unidade Centro" style="width:100%; max-width:600px; height:auto; border-radius:8px; margin-bottom:20px;">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1974.1189450757527!2d-35.992664!3d-8.2791062!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98bf283053f17%3A0xbc763823491045a4!2sFor%C3%A7a%20%26%20Forma%20Academia!5e0!3m2!1spt-BR!2sbr!4v1753479908273!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>allowfullscreen loading="lazy"></iframe>
+   
+<div class="horarios-box">
+  <p><strong><i class="fas fa-clock"></i> Horário de Funcionamento:</strong></p>
+  <p><strong>Segunda a Quinta:</strong> 05h às 23h</p>
+  <p><strong>Sexta:</strong> 05h às 22h</p>
+  <p><strong>Sábado:</strong> 08h às 14h</p>
+  <p><strong>Domingo:</strong> 08h às 12h</p>
+</div>
+
+
+
+   
+    </div>
+
+    
+
+    <!-- Unidade 2 -->
+    <div class="unidade">
+      <h3>Unidade José Liberato</h3>
+      <p><strong>Telefone:</strong> <a href="https://wa.me/5581992793535" target="_blank" class="contato-link">(81) 9279-3535</a></p>
+      <p><strong>Email:</strong> <a href="mailto:forcaeformaacademia@email.com" class="contato-link">forcaeformaacademia@email.com</a></p>
+      <p><strong>Endereço:</strong>Rua Oslo, 216 - Dep. Jose Antonio Liberato, Caruaru - PE, 55027-670</p>
+      <img src="img/forcaeforma2.jpg" alt="Foto da Unidade Centro" style="width:100%; max-width:600px; border-radius:8px; margin-bottom:20px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1974.0909533512042!2d-35.9446098!3d-8.2846875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98a46f06a8e9b%3A0x5f2ec59b9c182719!2sR.%20Oslo%2C%20216%20-%20Dep.%20Jose%20Antonio%20Liberato%2C%20Caruaru%20-%20PE%2C%2055027-670!5e0!3m2!1spt-BR!2sbr!4v1753479949807!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> allowfullscreen loading="lazy"></iframe>
+    
+<div class="horarios-box">
+  <p><strong><i class="fas fa-clock"></i> Horário de Funcionamento:</strong></p>
+ <p><strong>Segunda a Quinta:</strong> 05h às 23h</p>
+  <p><strong>Sexta:</strong> 05h às 22h</p>
+  <p><strong>Sábado:</strong> 08h às 14h</p>
+  <p><strong>Domingo:</strong> 08h às 12h</p>
+</div>
+
+
+
+    
+    </div>
+
+  </div>
+</section>
+
+
+</body>
+</html>
