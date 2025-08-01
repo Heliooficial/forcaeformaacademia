@@ -729,6 +729,152 @@ section {
   transform: scale(1.1); /* aumenta em 10% */
 }
 
+/*treino*/
+
+.treinos-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.treino-conteudo {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.exercicio {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #f9f9f9;
+}
+
+.treinos-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f0f4f8;
+}
+
+.select-container {
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.treino-conteudo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.exercicio {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.exercicio:hover {
+  transform: translateY(-5px);
+}
+
+.exercicio img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.exercicio h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.exercicio p {
+  font-size: 16px;
+  color: #666;
+}
+
+.treinos-section {
+  padding: 80px 20px 60px;
+  text-align: center;
+  background-color: #f0f4f8;
+}
+
+.treinos-header {
+  margin-bottom: 30px;
+}
+
+.treinos-header h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.treinos-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 40px;
+  width: 100%;
+}
+
+select {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.botao-concluir {
+  margin-top: 15px;
+  padding: 16px;
+  font-size: 18px;
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.botao-concluir:hover {
+  transform: scale(1.05);
+  background-color: #f0f8ff;
+  cursor: pointer;
+}
+
+.botao-feito {
+  background-color: #28a745 !important;
+  color: white !important;
+  border: none !important;
+  transform: none !important;
+}
+
 
 
 

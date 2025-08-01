@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre a Força & Forma</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Favicon -->
+    <link rel="icon" href="img/forcaeforma.png" type="image/png" />
+  
+</head>
+<body>
+
+      <!-- Cabeçalho fixo no topo -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="img/forcaeforma.png" alt="Logo Força & Forma" style="height: 60px;">
+        <b><span style="font-size: 20px; font-weight: bold; color: #fff;">Força & Forma Academia</span></b>
+      </div>
+    </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <b><a href="index.html">Início</a></b>
+      <b><a href="#about">Sobre</a></b>
+      <b><a href="#features">Nossos Serviços</a></b>
+      <b><a href="#pricing">Preços</a></b>
+      <b><a href="treinos.html">Treino</a></b>
+      <b><a href="sobre.html">Informações</a></b>
+    </nav>
+  </header>
+
+
+ <section id="treinos" class="treinos-section">
+  <div class="treinos-header">
+    <h2>💪 Escolha seu Grupo de Treino</h2>
+    <p>Selecione abaixo o grupo de treino que deseja visualizar:</p>
+  </div>
+
+  <div class="select-container">
+    <select id="grupoTreino" onchange="mostrarTreino()">
+      <option value="">-- Selecione --</option>
+      <option value="A">Treino A</option>
+      <option value="B">Treino B</option>
+      <option value="C">Treino C</option>
+      <option value="D">Treino D</option>
+    </select>
+  </div>
+
+  <div id="conteudoTreino" class="treino-conteudo"></div>
+</section>
+
+
+<script>
+  const treinos = {
+    A: [
+  {
+    nome: "Esteira",
+    descricao: "Exercício aeróbico essencial para melhorar o condicionamento físico, queimar calorias e fortalecer o sistema cardiovascular. Recomendado para todos os níveis de treino.",
+    imagem: "img/Esteira.gif",
+    series: "",
+    repeticoes: "20 minutos",
+    descanso: ""
+  },
+  {
+    nome: "Supino Reto Peito",
+    descricao: "Exercício fundamental para o desenvolvimento dos músculos peitorais. Também ativa tríceps e ombros, sendo excelente para ganho de força e volume na parte superior do corpo.",
+    imagem: "img/Supino reto Peito.gif",
+    series: "3",
+    repeticoes: "10 a 12",
+    descanso: "60 segundos"
+  },
+  {
+    nome: "Supino Declinado Peito",
+    descricao: "Foco no peitoral maior, especialmente a parte inferior. Ideal para complementar o treino de peito, aumentando a definição e força muscular nessa região.",
+    imagem: "img/Supino declinado peito.gif",
+    series: "3",
+    repeticoes: "10 a 12",
+    descanso: "60 segundos"
+  },
+  {
+    nome: "Voador Peito",
+    descricao: "Exercício isolador que foca no peitoral maior, especialmente na parte interna. Ideal para definição muscular e ativação profunda da região peitoral.",
+    imagem: "img/Voador Peito.gif",
+    series: "3",
+    repeticoes: "12",
+    descanso: "45 segundos"
+  },
+  {
+    nome: "Crucifixo Halteres Peito",
+    descricao: "Exercício isolador realizado em banco plano, focado na ativação do peitoral maior. Ideal para alongar e definir os músculos do peito, com movimento controlado e amplitude total.",
+    imagem: "img/Crucifixo Halteres Peito.gif",
+    series: "3",
+    repeticoes: "12",
+    descanso: "45 segundos"
+  },
+  {
+    nome: "Triceps Pulley",
+    descricao: "Exercício de isolamento realizado na polia alta, ideal para fortalecer e definir o músculo tríceps. Foco na execução controlada para máxima ativação muscular.",
+    imagem: "img/Triceps Pulley.gif",
+    series: "3",
+    repeticoes: "12",
+    descanso: "45 segundos"
+  },
+  {
+    nome: "Triceps Corda",
+    descricao: "Variante do pulley com corda, ideal para ativar todas as cabeças do tríceps. Proporciona maior amplitude de movimento e contração muscular, favorecendo definição e força.",
+    imagem: "img/Triceps corda.gif",
+    series: "3",
+    repeticoes: "12",
+    descanso: "45 segundos"
+  },
+  {
+    nome: "Triceps Testa",
+    descricao: "Exercício clássico de isolamento para o tríceps, realizado com barra ou halteres. Foco na extensão dos cotovelos, ideal para ganho de força e definição na parte posterior dos braços.",
+    imagem: "img/Triceps testa.gif",
+    series: "3",
+    repeticoes: "10 a 12",
+    descanso: "60 segundos"
+  },
+  {
+    nome: "Abdominal Supra",
+    descricao: "Fortalece a parte superior do abdômen, sendo ideal para definição muscular e melhora da postura. Pode ser realizado no solo ou em banco inclinado, com foco na contração abdominal.",
+    imagem: "img/Abdominal Supra.gif",
+    series: "3",
+    repeticoes: "15 a 20",
+    descanso: "30 segundos"
+  }
+]
+,
+    B: [
+      { nome: "Supino Reto", descricao: "Supino com barra para peitoral e tríceps.", imagem: "img/supino.gif" },
+      { nome: "Crucifixo", descricao: "Crucifixo com halteres para peitoral.", imagem: "img/crucifixo.gif" },
+      { nome: "Flexão de Braços", descricao: "Exercício funcional para peitoral e tríceps.", imagem: "img/flexao.gif" }
+    ],
+    C: [
+      { nome: "Remada Curvada", descricao: "Remada com barra para costas e bíceps.", imagem: "img/remada.gif" },
+      { nome: "Puxada Frontal", descricao: "Puxada na frente para dorsais.", imagem: "img/puxada.gif" },
+      { nome: "Pulldown", descricao: "Pulldown com pegada aberta para costas.", imagem: "img/pulldown.gif" }
+    ],
+    D: [
+      { nome: "Rosca Direta", descricao: "Rosca com barra para bíceps.", imagem: "img/rosca.gif" },
+      { nome: "Tríceps Testa", descricao: "Tríceps com barra para parte posterior do braço.", imagem: "img/triceps.gif" },
+      { nome: "Rosca Martelo", descricao: "Rosca com halteres para braquial.", imagem: "img/martelo.gif" }
+    ]
+  };
+
+  function mostrarTreino() {
+  const grupo = document.getElementById("grupoTreino").value;
+  const container = document.getElementById("conteudoTreino");
+  container.innerHTML = "";
+
+  if (grupo && treinos[grupo]) {
+    treinos[grupo].forEach((exercicio, index) => {
+      const id = `ex${grupo}${index}`;
+      container.innerHTML += `
+        <div class="exercicio" id="${id}" style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 10px; background-color: #f9f9f9;">
+          <img src="${exercicio.imagem}" alt="${exercicio.nome}" style="width: 100%; max-width: 300px; border-radius: 8px;">
+          <h3 style="margin-top: 10px;">${exercicio.nome}</h3>
+          <p>${exercicio.descricao}</p>
+          <div style="background-color: #eee; padding: 10px; border-radius: 8px; margin-top: 10px;">
+            <p><strong>Séries:</strong> ${exercicio.series}</p>
+            <p><strong>Repetições/Tempo:</strong> ${exercicio.repeticoes}</p>
+            <p><strong>Descanso:</strong> ${exercicio.descanso}</p>
+          </div>
+          <button class="botao-concluir" onclick="marcarConcluido('${id}')">Marcar como Concluído</button>
+      `;
+    });
+  }
+}
+function marcarConcluido(id) {
+  const div = document.getElementById(id);
+  div.style.opacity = "0.6";
+  const botao = div.querySelector("button");
+  botao.innerText = "✔️ Concluído!";
+  botao.disabled = true;
+  botao.style.backgroundColor = "#28a745";
+  botao.style.color = "white";
+  botao.style.border = "none";
+}
+
+
+</script>
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src='main.js'></script>
+
+</body>
+</html>
